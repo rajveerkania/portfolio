@@ -7,6 +7,7 @@ import Skills from './components/skills';
 import Social from './components/social';
 import Avatar from '../../assets/rajveer.jpg';
 
+
 const Page = () => {
 
 	return (
