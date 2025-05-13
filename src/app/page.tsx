@@ -45,7 +45,7 @@ const Page = () => {
 					<span>6'3''</span>
 				</div>
 				<div className="px-2 text-sm rounded-md text-primary bg-primary/10" aria-label="Resume">
-					<a href="https://drive.usercontent.google.com/download?id=1gHGTQpkqni8Jo4R6A_dL5aqj8i_gAVea&export=download&authuser=0&confirm=t&uuid=1f629c4d-5709-438e-bd5d-d8639d64b441&at=AEz70l6bSRsTPG_oGVagZbT5ixgn:1740087883127" target="_blank">
+					<a href="https://drive.google.com/file/d/1yBQh92LDSv_lzHmr4H-gSf9ndGSE1Kjb" target="_blank">
 						Resume
 					</a>
 				</div>
