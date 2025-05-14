@@ -1,45 +1,86 @@
 import React from "react";
 
-const Social = () => {
-  const social = [
+const Skills = () => {
+  const technicalSkills = [
     {
-      name: "Github",
-      link: "https://github.com/rajveerkania/",
+      name: "Languages",
+      description:
+        "TypeScript, JavaScript, Python, Java, C, C++, Bash, HTML, CSS, Assembly",
     },
     {
-      name: "LinkedIn",
-      link: "https://www.linkedin.com/in/rajveer02/",
+      name: "Frontend",
+      description: "Next.js, React, Bootstrap, Tailwind CSS",
     },
     {
-      name: "Portfolio",
-      link: "https://rajveer.space",
+      name: "Backend",
+      description: "Node.js, Django, REST APIs, OAuth",
     },
     {
-      name: "Instagram",
-      link: "https://www.instagram.com/rajveerkania/",
+      name: "Databases",
+      description: "MySQL, MongoDB, PostgreSQL",
+    },
+    {
+      name: "DevOps & Tools",
+      description: "AWS, Docker, Git, GitHub, Linux, Postman",
+    },
+    {
+      name: "Other",
+      description: "Data Analysis, Version Control, Web Scraping",
+    },
+  ];
+
+  const competencyLevels = [
+    {
+      name: "Next.js",
+      description: "Unconscious Competence",
+    },
+    {
+      name: "MERN Stack",
+      description: "Unconscious Competence",
+    },
+    {
+      name: "Backend with Python",
+      description: "Unconscious Competence",
+    },
+    {
+      name: "Cloud with AWS",
+      description: "Conscious Competence",
+    },
+    {
+      name: "Bash Scripting",
+      description: "Conscious Competence",
+    },
+    {
+      name: "Linux Administration",
+      description: "Conscious Competence",
     },
   ];
 
   return (
-    <div className="flex flex-col gap-2">
-      <h2 className="font-medium text-2xl">Social</h2>
-      <div className="flex flex-wrap gap-2 text-primary">
-        {social.map((item, index) => (
-          <React.Fragment key={index}>
-            <a
-              href={item.link}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="underline italic"
-            >
-              {item.name}
-            </a>
-            {index !== social.length - 1 && <span className="px-2">|</span>}
-          </React.Fragment>
-        ))}
+    <>
+      <div className="flex flex-col gap-4">
+        <h2 className="text-2xl font-medium">Technical Skills</h2>
+        <ul className="list-inside">
+          {technicalSkills.map((skill, index) => (
+            <li key={index}>
+              <span className="font-medium">{skill.name}:</span>{" "}
+              <span>{skill.description}</span>
+            </li>
+          ))}
+        </ul>
+
+        <h3 className="text-xl font-medium mt-4">Competency Levels</h3>
+        <ul className="list-inside">
+          {competencyLevels.map((skill, index) => (
+            <li key={index}>
+              <span className="font-medium">{skill.name}</span>{" "}
+              <span>({skill.description})</span>
+            </li>
+          ))}
+        </ul>
       </div>
-    </div>
+    </>
   );
 };
 
-export default Social;
+export default Skills;
