@@ -9,6 +9,11 @@ const Projects = () => {
         "Enterprise Resource Planning System (July 2024 - November 2024)",
     },
     {
+      name: "AI Notes App",
+      link: "https://github.com/rajveerkania/ai-notes-app",
+      description: "AI-Powered Notes Application",
+    },
+    {
       name: "PriceWise",
       link: "https://github.com/rajveerkania/pricewise",
       description: "Price Comparison Tool (March 2024)",
