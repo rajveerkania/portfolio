@@ -1,49 +1,45 @@
-import React from 'react'
+import React from "react";
 
-const Skills = () => {
-    const skills = [
-        {
-            name: 'Next.js',
-            description: 'Unconscious Competence'
-        },
-        {
-            name: 'MERN Stack',
-            description: 'Unconscious Competence'
-        },
-        {
-            name: 'Backend with Python',
-            description: 'Unconscious Competence'
-        },
-        {
-            name: 'Cloud with AWS',
-            description: 'Conscious Competence'
-        },
-        {
-            name: 'Bash Scripting',
-            description: 'Conscious Competence'
-        },
-        {
-            name: 'Linux Administration',
-            description: 'Conscious Competence'
-        },
-    ]
+const Social = () => {
+  const social = [
+    {
+      name: "Github",
+      link: "https://github.com/rajveerkania/",
+    },
+    {
+      name: "LinkedIn",
+      link: "https://www.linkedin.com/in/rajveer02/",
+    },
+    {
+      name: "Portfolio",
+      link: "https://rajveer.space",
+    },
+    {
+      name: "Instagram",
+      link: "https://www.instagram.com/rajveerkania/",
+    },
+  ];
 
-    return (
-        <>
-            <div className="flex flex-col gap-4">
-                <h2 className="text-2xl font-medium">Skills</h2>
-                <ul className="list-inside">
-                    {
-                        skills.map((skill, index) => (
-                            <li key={index}>
-                                <span className="font-medium">{skill.name}</span> <span>({skill.description})</span>
-                            </li>
-                        ))
-                    }
-                </ul>
-            </div>
-        </>
-    )
-}
+  return (
+    <div className="flex flex-col gap-2">
+      <h2 className="font-medium text-2xl">Social</h2>
+      <div className="flex flex-wrap gap-2 text-primary">
+        {social.map((item, index) => (
+          <React.Fragment key={index}>
+            <a
+              href={item.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="underline italic"
+            >
+              {item.name}
+            </a>
+            {index !== social.length - 1 && <span className="px-2">|</span>}
+          </React.Fragment>
+        ))}
+      </div>
+    </div>
+  );
+};
 
-export default Skills
+export default Social;
