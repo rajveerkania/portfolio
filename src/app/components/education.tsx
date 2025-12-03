@@ -6,7 +6,7 @@ const Education = () => {
       degree: "Bachelor of Technology in Computer Science",
       institution: "Rashtriya Raksha University",
       date: "October 2021 - May 2025",
-      details: "CGPA: 8.18 | Rank 1",
+      details: "CGPA: 8.26 | Rank 1",
     },
     {
       degree: "Higher Secondary Education",
@@ -35,6 +35,17 @@ const Education = () => {
     },
   ];
 
+  const publications = [
+    {
+      title:
+        "A Comprehensive Analysis of Security Flaws and Attack Vectors in Artificial Intelligence–Powered Brain–Computer Interfaces",
+      journal: "VER Journal (Scopus-indexed)",
+      date: "2024",
+      role: "Co-author",
+      link: "https://verjournal.com/index.php/ver/article/view/522",
+    },
+  ];
+
   return (
     <>
       <div className="flex flex-col gap-4">
@@ -60,6 +71,26 @@ const Education = () => {
             <li key={index}>
               <span className="font-medium">{course.name}</span> |{" "}
               <span>{course.date}</span>
+            </li>
+          ))}
+        </ul>
+
+        {/* 🔥 New Section: Research & Publications */}
+        <h3 className="font-medium text-xl mt-4">Research & Publications</h3>
+        <ul className="list-inside">
+          {publications.map((pub, index) => (
+            <li key={index}>
+              <span className="font-medium">{pub.role}</span> —{" "}
+              <span>{pub.title}</span> |{" "}
+              <span className="text-primary">{pub.journal}</span> |{" "}
+              <span>{pub.date}</span>{" "}
+              <a
+                href={pub.link}
+                target="_blank"
+                className="underline text-primary"
+              >
+                View Paper
+              </a>
             </li>
           ))}
         </ul>

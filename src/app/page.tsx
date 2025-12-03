@@ -19,24 +19,28 @@ const Page = () => {
           </h1>
           <p>
             B.Tech Computer Science Student (Rank 1) |{" "}
-            <span className="font-bold">Open Source Contributor</span> |{" "}
+            <span className="font-bold"></span>
             <span className="font-bold text-primary">
               GATE CSE 2024 & 2025 Qualified (96.5 Percentile - Top 3.5%)
             </span>
+            <span className="font-bold"></span> |{" "}
+            <span className="font-bold text-primary">Scopus-Indexed</span>{" "}
+            <span>Co-Author (2025)</span>
           </p>
           <p>Namaste!</p>
           <p className="text-justify">
             I'm Rajveer Kania, an undergraduate Computer Science student at
             Rashtriya Raksha University, passionate about cloud computing,
             distributed systems, and full-stack development. Currently working
-            as a Software Development Intern at Global Eye Intelligence,
-            focusing on modular component design and custom solutions.
+            as a Project Assistant at Technology and Innovation Unit, Rashtriya
+            Raksha University, Gandhinagar focusing on modular component design
+            and custom solutions.
           </p>
         </div>
         <Image
           src={Avatar}
           alt="Rajveer Kania"
-          className="object-cover w-auto h-32 md:w-32 md:h-auto grayscale"
+          className="object-cover w-auto h-32 md:w-32 md:h-auto"
           width={300}
           height={300}
           placeholder="blur"
@@ -88,10 +92,7 @@ const Page = () => {
               rajveerkania02@gmail.com
             </a>
           </li>
-          <li>
-            <span>{"phone: "}</span>
-            <span className="text-primary">+91 97242 67506</span>
-          </li>
+
           <li>
             <span>{"location: "}</span>
             <span className="text-primary">Surat, Gujarat</span>

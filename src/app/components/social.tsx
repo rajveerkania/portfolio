@@ -14,10 +14,6 @@ const Social = () => {
       name: "Portfolio",
       link: "https://rajveer.space",
     },
-    {
-      name: "Instagram",
-      link: "https://www.instagram.com/rajveerkania/",
-    },
   ];
 
   return (
