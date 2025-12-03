@@ -65,7 +65,7 @@ const Page = () => {
           aria-label="Resume"
         >
           <a
-            href="https://drive.google.com/file/d/1yBQh92LDSv_lzHmr4H-gSf9ndGSE1Kjb"
+            href="https://drive.google.com/file/d/1rznV7Ff4tJ9skeMjtjL7b8N7TWa5Ofzw/"
             target="_blank"
           >
             Resume
